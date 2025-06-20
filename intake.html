@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ConciergeGEM Intake Form</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+   <div class="max-w-3xl mx-auto p-6">
+      <h1 class="text-3xl font-bold text-blue-700 mb-4">🩺 ConciergeGEM™ Intake Questionnaire</h1>
+      <p class="mb-8 text-sm text-gray-600">Powered by Nomad Nurse Network</p>
+
+      <form action="#" method="POST" class="space-y-8">
+         <!-- Section 1: Professional Identity -->
+         <fieldset class="space-y-4">
+            <legend class="text-xl font-semibold text-gray-700">1. Professional Identity</legend>
+
+            <input type="text" name="full_name" placeholder="Full Name" class="w-full p-2 border border-gray-300 rounded" required>
+            <input type="email" name="email" placeholder="Email Address" class="w-full p-2 border border-gray-300 rounded" required>
+            <input type="tel" name="phone" placeholder="Phone Number" class="w-full p-2 border border-gray-300 rounded">
+
+            <label class="block font-medium">Profession:</label>
+            <select name="profession" class="w-full p-2 border border-gray-300 rounded">
+               <option>Nurse Practitioner (NP)</option>
+               <option>Advanced Practice Registered Nurse (APRN)</option>
+               <option>Physician Assistant (PA)</option>
+               <option>Certified Nurse Midwife (CNM)</option>
+            </select>
+
+            <input type="text" name="license" placeholder="License Number" class="w-full p-2 border border-gray-300 rounded">
+            <input type="text" name="license_state" placeholder="Issuing State" class="w-full p-2 border border-gray-300 rounded">
+
+            <label class="block font-medium">Years of Clinical Experience:</label>
+            <select name="experience" class="w-full p-2 border border-gray-300 rounded">
+               <option><1</option>
+               <option>1–3</option>
+               <option>4–10</option>
+               <option>10+</option>
+            </select>
+
+            <label class="block font-medium">Specializations:</label>
+            <div class="grid grid-cols-2 gap-2">
+               <label><input type="checkbox" name="specialization" value="Family Medicine"> Family Medicine</label>
+               <label><input type="checkbox" name="specialization" value="Mental Health"> Mental Health</label>
+               <label><input type="checkbox" name="specialization" value="Pediatrics"> Pediatrics</label>
+               <label><input type="checkbox" name="specialization" value="Geriatrics"> Geriatrics</label>
+               <label><input type="checkbox" name="specialization" value="Women's Health"> Women's Health</label>
+               <input type="text" name="specialization_other" placeholder="Other" class="w-full p-2 border border-gray-300 rounded">
+            </div>
+         </fieldset>
+
+         <!-- Section 2: Business Model -->
+         <fieldset class="space-y-4">
+            <legend class="text-xl font-semibold text-gray-700">2. Business Model</legend>
+            <label class="block font-medium">Preferred Practice Model:</label>
+            <select name="practice_model" class="w-full p-2 border border-gray-300 rounded">
+               <option>Telehealth</option>
+               <option>Mobile</option>
+               <option>Brick & Mortar</option>
+               <option>Hybrid</option>
+            </select>
+            <input type="number" name="patient_load" placeholder="Target Patient Load (per month)" class="w-full p-2 border border-gray-300 rounded">
+            <input type="number" name="income" placeholder="Desired Annual Income ($)" class="w-full p-2 border border-gray-300 rounded">
+            <label class="block font-medium">Timeline to Launch:</label>
+            <select name="launch_timeline" class="w-full p-2 border border-gray-300 rounded">
+               <option>30 days</option>
+               <option>60 days</option>
+               <option>90 days</option>
+               <option>120 days</option>
+            </select>
+         </fieldset>
+
+         <!-- Section 3: Risk & Preferences -->
+         <fieldset class="space-y-4">
+            <legend class="text-xl font-semibold text-gray-700">3. Risk & Preferences</legend>
+            <label>Risk Tolerance:</label>
+            <select name="risk" class="w-full p-2 border border-gray-300 rounded">
+               <option>Conservative</option>
+               <option>Moderate</option>
+               <option>Aggressive</option>
+            </select>
+            <label>Tech Savviness:</label>
+            <select name="tech" class="w-full p-2 border border-gray-300 rounded">
+               <option>Low</option>
+               <option>Medium</option>
+               <option>High</option>
+            </select>
+            <label>Marketing Comfort:</label>
+            <select name="marketing" class="w-full p-2 border border-gray-300 rounded">
+               <option>Low</option>
+               <option>Medium</option>
+               <option>High</option>
+            </select>
+            <label>Budget Range for Launch:</label>
+            <select name="budget" class="w-full p-2 border border-gray-300 rounded">
+               <option>Minimal (DIY approach)</option>
+               <option>Standard (guided implementation)</option>
+               <option>Premium (done-for-you service)</option>
+            </select>
+         </fieldset>
+
+         <!-- Section 4: Location Specifics -->
+         <fieldset class="space-y-4">
+            <legend class="text-xl font-semibold text-gray-700">4. Location Specifics</legend>
+            <input type="text" name="state" placeholder="Practice State (AZ, ME, WA, NE, VT only)" class="w-full p-2 border border-gray-300 rounded">
+            <input type="text" name="county" placeholder="County/City" class="w-full p-2 border border-gray-300 rounded">
+         </fieldset>
+
+         <!-- Section 5: Notes -->
+         <fieldset class="space-y-4">
+            <legend class="text-xl font-semibold text-gray-700">5. Additional Notes or Concerns</legend>
+            <textarea name="notes" rows="4" placeholder="Questions, fears, or goals you'd like us to consider..." class="w-full p-2 border border-gray-300 rounded">
